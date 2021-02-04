@@ -7,7 +7,7 @@ country: "us"
 language: "en"    
 latitude: "41.732400"    
 longitude: "-72.793634"   
-humandate: "Mar 1, 2021"    
+humandate: "Mar 8, 15, & 22, 2021"    
 humantime: "9:00 am - 12:00 pm"    
 startdate: 2021-03-01     
 enddate: 2021-03-01        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
@@ -15,7 +15,7 @@ instructor: ["Dave Mellert"]
 helper: ["Erick Ratamero", "Eric Perlman", "Sue McClatchy"]
 email: ["susan.mcclatchy@jax.org", "dave.mellert@jax.org"] 
 collaborative_notes:  # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
-eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
+eventbrite: 140122358747         # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
 {% comment %} See instructions in the comments below for how to edit specific sections of this workshop template. {% endcomment %}
@@ -82,13 +82,7 @@ INTRODUCTION
 Edit the general explanatory paragraph below if you want to change
 the pitch.
 {% endcomment %}
-{% if site.carpentry == "swc" %}
-{% include swc/intro.html %}
-{% elsif site.carpentry == "dc" %}
-{% include dc/intro.html %}
-{% elsif site.carpentry == "lc" %}
-{% include lc/intro.html %}
-{% endif %}
+{% include none/intro.html %}
 
 {% comment %}
 AUDIENCE
@@ -96,13 +90,8 @@ AUDIENCE
 Explain who your audience is.  (In particular, tell readers if the
 workshop is only open to people from a particular institution.
 {% endcomment %}
-{% if site.carpentry == "swc" %}
-{% include swc/who.html %}
-{% elsif site.carpentry == "dc" %}
-{% include dc/who.html %}
-{% elsif site.carpentry == "lc" %}
-{% include lc/who.html %}
-{% endif %}
+
+{% include none/who.html %}
 
 {% comment %}
 LOCATION
